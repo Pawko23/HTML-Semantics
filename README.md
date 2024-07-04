@@ -6,12 +6,12 @@ Hi! This repository contains a collection of HTML files that I am working on to 
 The repository includes `to-recreate` folder with five HTML files that I will transform to best semantics possible:
 * blog.html
 * about.html
-* arctivle.html
+* article.html
 * ecommerce.html
 * portfolio.html
 
 ## Purpose
-1. Learn best HTML practises - Understanding the importance and applying semantic tags.
+1. Learn best HTML practises - Understanding the importance and applying semantic tags, attributes, etc.
 2. Enhance Accessibility - Many users rely on assistive technologies. Writing semantic HTML makes web content accessible for all of us, including those with disabilities.
 3. Improve Code Readability and Maintainability - Semantic HTML provides clearer context and meaning to the content, making it easier for developers to understand and maintain the code.
 
