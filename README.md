@@ -1,6 +1,6 @@
 # HTML-Semantics
 ## Overview
-Hi! This repository contains a collection of HTML files that I am working on to improve my understanding and implementation of semantic HTML. The purpose of this is to practise and demonstrate best HTML practises, with a strong focus on accessibility and semantic correctness.
+Hi! This repository contains a collection of HTML files that I am working on to improve my understanding and implementation of semantic HTML. The purpose of this project is to practise and demonstrate best HTML practises, with a strong focus on accessibility and semantic correctness, following WCAG 2.1 guidelines and ARIA's set of attributes.
 
 ## Structure
 The repository includes `to-recreate` folder with five HTML files that I will transform to best semantics possible:
