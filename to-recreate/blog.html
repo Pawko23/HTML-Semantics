@@ -14,25 +14,32 @@
     </style>
 </head>
 <body>
-    <div class="title">My First Blog Post</div>
-    <div class="author">By Aleksander Pawlak</div>
-    <div class="content">
-        <div>This is the content of my first blog post. It is a very interesting post.</div>
-        <div class="image"><img src="image1.jpg"></div>
-        <div>This is another paragraph of the blog post content. There's a lot to say about this topic.</div>
-    </div>
-    <div class="comment">
-        <div class="author">Commenter 1</div>
-        <div class="text">This is a great post! Thanks for sharing.</div>
-    </div>
-    <div class="comment">
-        <div class="author">Commenter 2</div>
-        <div class="text">I found this very helpful. Looking forward to more posts like this.</div>
-    </div>
-    <div class="footer">
-        <div>Posted on January 1, 2024</div>
-        <div>Category: Blogging</div>
-        <div>Contact us: blog@example.com</div>
-    </div>
+    <article>
+        <header>
+            <h1 class="title">My First Blog Post</h1>
+            <p class="author" aria-label="Author">By <span itemprop="author">Aleksander Pawlak</span></p>
+        </header>
+        <section class="content">
+            <p>This is the content of my first blog post. It is a very interesting post.</p>
+            <figure class="image">
+                <img src="image1.jpg" alt="Descriptive text about image">
+            </figure>
+            <p>This is another paragraph of the blog post content. There's a lot to say about this topic.</p>
+        </section>
+        <section aria-labelledby="comments-title">
+            <h2 id="comments-title">Comments</h2>
+            <div class="comment" role="comment">
+                <p class="author" aria-label="Commenter">Commenter 1</p>
+                <p class="text">This is a great post! Thanks for sharing.</p>
+            </div>
+            <div class="comment" role="comment">
+                <p class="author" aria-label="Commenter">Commenter 2</p>
+                <p class="text">I found this very helpful. Looking forward to more posts like this.</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>
+        </footer>
+    </article>
 </body>
 </html>
