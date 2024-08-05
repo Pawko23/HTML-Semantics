@@ -4,41 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Article</title>
-    <style>
-        .title { font-size: 2em; font-weight: bold; }
-        .date { color: gray; }
-        .content { margin-top: 20px; }
-        .sidebar { margin-top: 40px; border-left: 1px solid #ccc; padding-left: 10px; }
-        .related { margin-top: 40px; }
-        .related-article { margin-top: 10px; }
-        .form { margin-top: 20px; }
-        .footer { margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; }
-    </style>
 </head>
 <body>
-    <div class="title">Breaking News: Major Event Happened</div>
-    <div class="date">Published on July 3, 2024</div>
-    <div class="content">
-        <div>This is the content of the news article. It provides detailed information about the major event that happened.</div>
-        <div class="image"><img src="event.jpg"></div>
-        <div>This is another paragraph of the news article. More details and insights about the event are shared here.</div>
-        <div>Yet another paragraph, ensuring there is enough content to work with.</div>
-    </div>
-    <div class="sidebar">
-        <div class="related">
-            <div class="related-article">Related Article 1: More details on the major event.</div>
-            <div class="related-article">Related Article 2: Reactions and implications of the major event.</div>
-        </div>
-    </div>
-    <div class="form">
-        <div><input type="text" placeholder="Your name"></div>
-        <div><input type="email" placeholder="Your email"></div>
-        <div><textarea placeholder="Your comment"></textarea></div>
-        <div><button type="submit">Submit</button></div>
-    </div>
-    <div class="footer">
-        <div>Contact us: news@example.com</div>
-        <div>&copy; 2024 News Organization</div>
-    </div>
+    <header class="header">
+        <h1 class="title">Breaking News: Major Event Happened</h1>
+        <p class="date">Pubslished on <time datetime="2024-07-03">July 3, 2024</time></p>
+    </header>
+    <main>
+        <article>
+            <h2 class="article-title">Major Event Happened</h2>
+            <p>This is the content of the news article. It provides detailed information about the major event that happened.</p>
+            <figure>
+                <img src="event.jpg" alt="Image picturing major event that happened">
+                <figcaption>Major event image</figcaption>
+            </figure>
+            <p>This is another paragraph of the news article. More details and insights about the event are shared here.</p>
+            <p>Yet another paragraph, ensuring there is enough content to work with.</p>
+        </article>
+        <aside>
+            <h2 class="aside-title">Related articles</h2>
+            <ul class="related">
+                <li class="related-article">Related Article 1: More details on the major event.</li>
+                <li class="related-article">Related Article 2: Reactions and implications of the major event.</li>
+            </ul>
+        </aside>
+        <section class="form-section">
+            <h2 class="form-title">Leave your comment: </h2>
+            <form>
+                <div class="form-box">
+                    <label for="name">Enter your name: </label>
+                    <input id="name" type="text" placeholder="Your name">
+                </div>
+                <div class="form-box">
+                    <label for="email">Enter your email: </label>
+                    <input id="email" type="email" placeholder="Your email">
+                </div>
+                <div class="form-box">
+                    <label for="comment">Your comment</label>
+                    <textarea id="comment" placeholder="Your comment"></textarea>
+                </div>
+                <div class="form-box">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer aria-label="Footer">
+        <p>Contact us: <a href="mailto:news@example.com">news@example.com</a></p>
+        <p>&copy; <time datetime="2024">2024</time> News Organization</p>
+    </footer>
 </body>
 </html>
