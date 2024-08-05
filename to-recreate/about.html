@@ -5,57 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company's About</title>
     <style>
-        .header { font-size: 2em; font-weight: bold; }
-        .intro { margin-top: 20px; }
-        .history { margin-top: 40px; }
-        .milestone { margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
-        .team { margin-top: 40px; }
+        .title { font-size: 2em; font-weight: bold; }
+        .intro-section { margin-top: 20px; }
+        .history-section { margin-top: 40px; }
+        .team-section { margin-top: 40px; }
         .member { margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
         .footer { margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; }
     </style>
 </head>
 <body>
-    <div class="header">About Our Company</div>
-    <div class="intro">
-        <div>We are a leading company in our industry. Our mission is to provide the best services to our clients.</div>
-    </div>
-    <div class="history">
-        <div class="milestone">
-            <div class="year">2000</div>
-            <div class="description">Company founded.</div>
-        </div>
-        <div class="milestone">
-            <div class="year">2010</div>
-            <div class="description">Reached 1 million customers.</div>
-        </div>
-        <div class="milestone">
-            <div class="year">2020</div>
-            <div class="description">Expanded globally.</div>
-        </div>
-    </div>
-    <div class="team">
-        <div class="member">
-            <div class="name">Alice Smith</div>
-            <div class="role">CEO</div>
-            <div class="bio">Alice has over 20 years of experience in the industry and is a visionary leader.</div>
-            <div class="image"><img src="alice.jpg"></div>
-        </div>
-        <div class="member">
-            <div class="name">Bob Johnson</div>
-            <div class="role">CTO</div>
-            <div class="bio">Bob is an expert in technology and has been with the company for 10 years.</div>
-            <div class="image"><img src="bob.jpg"></div>
-        </div>
-        <div class="member">
-            <div class="name">Carol White</div>
-            <div class="role">CFO</div>
-            <div class="bio">Carol has a strong background in finance and ensures the company's financial health.</div>
-            <div class="image"><img src="carol.jpg"></div>
-        </div>
-    </div>
-    <div class="footer">
-        <div>Contact us: info@company.com</div>
-        <div>&copy; 2024 Our Company</div>
-    </div>
+    <header class="header" aria-label="About our Company">
+        <h1 class="title">About our Company</h1>
+    </header>
+    <section class="intro-section" aria-labelledby="intro-heading">
+        <h2 id="intro-heading">Introduction</h2>
+        <p>We are a leading company in our industry. Our mission is to provide the best services to our clients.</p>
+    </section>
+    <section class="history-section" aria-labelledby="intro-history">
+        <h2 id="intro-history">Our history</h2>
+        <ul class="history-list">
+            <li>
+                <time datetime="2000" aria-label="Year 2000">2000</time>
+                <p>Company founded</p>
+            </li>
+            <li>
+                <time datetime="2010" aria-label="Year 2010">2010</time>
+                <p>Reached 1 million customers</p>
+            </li>
+            <li>
+                <time datetime="2020" aria-label="Year 2020">2020</time>
+                <p>Expanded globally</p>
+            </li>
+        </ul>
+    </section>
+    <section class="team-section" aria-labelledby="team-title">
+        <h2 id="team-title">Meet our team</h2>
+        <article class="member" aria-labelledby="alice-heading">
+            <h3 id="alice-heading">Alice Smith</h3>
+            <p><strong>Role:</strong> CEO</p>
+            <p>Alice has over 20 years of experience in the industry and is a visionary leader.</p>
+            <figure>
+                <img src="alice.jpg" alt="Alice Smith">
+                <figcaption>Alice Smith</figcaption>
+            </figure>
+        </article>
+        <article class="member" aria-labelledby="carol-heading">
+            <h3 id="carol-heading">Carol White</h3>
+            <p><strong>Role:</strong> CFO</p>
+            <p>Carol has a strong background in finance and ensures the company's financial health.</p>
+            <figure>
+                <img src="carol.jpg" alt="Carol White">
+                <figcaption>Carol White</figcaption>
+            </figure>
+        </article>
+        <article class="member" aria-labelledby="bob-heading">
+            <h3 id="bob-heading">Bob Johnson</h3>
+            <p><strong>Role:</strong> CTO</p>
+            <p>Bob is an expert in technology and has been with the company for 10 years.</p>
+            <figure>
+                <img src="bob.jpg" alt="Bob Johnson">
+                <figcaption>Bob Johnson</figcaption>
+            </figure>
+        </article>
+    </section>
+    <footer class="footer" aria-label="Footer">
+        <p>Contact us: <a href="mailto:info@company.com">info@company.com</a></p>
+        <p>&copy; <time datetime="2024">2024</time> Our Company</p>
+    </footer>
 </body>
 </html>
