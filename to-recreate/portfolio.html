@@ -6,8 +6,8 @@
     <title>Portfolio</title>
     <style>
         .header { font-size: 2em; font-weight: bold; }
-        .intro { margin-top: 20px; }
-        .projects { margin-top: 40px; }
+        .intro-section { margin-top: 20px; }
+        .projects-section { margin-top: 40px; }
         .project { margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
         .contact { margin-top: 40px; }
         .form { margin-top: 20px; }
@@ -15,38 +15,62 @@
     </style>
 </head>
 <body>
-    <div class="header">Aleksander's Portfolio</div>
-    <div class="intro">
-        <div>Hello! I'm Aleksander, a web developer with a passion for creating beautiful and functional websites.</div>
-    </div>
-    <div class="projects">
-        <div class="project">
-            <div class="title">Project 1</div>
-            <div class="description">This is a description of Project 1. It was built using HTML, CSS, and JavaScript.</div>
-            <div class="image"><img src="project1.jpg"></div>
-        </div>
-        <div class="project">
-            <div class="title">Project 2</div>
-            <div class="description">This is a description of Project 2. It was built using React and Node.js.</div>
-            <div class="image"><img src="project2.jpg"></div>
-        </div>
-        <div class="project">
-            <div class="title">Project 3</div>
-            <div class="description">This is a description of Project 3. It was built using Python and Django.</div>
-            <div class="image"><img src="project3.jpg"></div>
-        </div>
-    </div>
-    <div class="contact">
-        <div class="form">
-            <div><input type="text" placeholder="Your name"></div>
-            <div><input type="email" placeholder="Your email"></div>
-            <div><textarea placeholder="Your message"></textarea></div>
-            <div><button type="submit">Submit</button></div>
-        </div>
-    </div>
-    <div class="footer">
-        <div>Contact: aleksander@example.com</div>
-        <div>&copy; 2024 Aleksander Pawlak</div>
-    </div>
+    <header class="header">
+        <h2>Aleksander's portfolio</h2>
+    </header>
+    <main>
+        <section class="intro-section" aria-labelledby="intro-title">
+            <h2 id="intro-title">About me</h2>
+            <p class="">Hello! I'm Aleksander, a web developer with a passion for creating beautiful and functional websites.</p>
+        </section>
+        <section class="projects-section" aria-labelledby="my-projects">
+            <h2 id="my-projects">My highlighted projects</h2>
+            <article class="project" aria-labelledby="project1-title">
+                <h4 id="project1-title">Project 1</h4>
+                <p class="description">This is a description of Project 1. It was built using HTML, CSS, and JavaScript.</p>
+                <figure>
+                    <img src="project1.jpg" alt="Description of project1's picture">
+                </figure>
+            </article>
+            <article class="project" aria-labelledby="project2-title">
+                <h4 id="project2-title">Project 2</h4>
+                <p class="description">This is a description of Project 2. It was built using React and Node.js.</p>
+                <figure>
+                    <img src="project2.jpg" alt="Description of project2's picture">
+                </figure>
+            </article>
+            <article class="project" aria-labelledby="project3-title">
+                <h4 id="project3-title">Project 3</h4>
+                <p class="description">This is a description of Project 3. It was built using Python and Django.</p>
+                <figure>
+                    <img src="project3.jpg" alt="Description of project3's picture">
+                </figure>
+            </article>
+        </section>
+        <section class="contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact me:</h2>
+            <form>
+                <div class="form-box">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Name" aria-required="true">
+                </div>
+                <div class="form-box">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" placeholder="Email" aria-required="true">
+                </div>
+                <div class="form-box">
+                    <label for="message">Your message:</label>
+                    <textarea type="text" id="message" placeholder="Message" aria-required="true"></textarea>
+                </div>
+                <div class="form-box">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: <a href="mailto:aleksander@example.com">aleksander@example.com</a></div>
+        <p>&copy; <time datetime="2024">2024</time> Aleksander Pawlak</p>
+    </footer>
 </body>
 </html>
