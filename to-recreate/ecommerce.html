@@ -17,34 +17,58 @@
     </style>
 </head>
 <body>
-    <div class="header">Awesome Product</div>
-    <div class="product-image"><img src="product.jpg"></div>
-    <div class="description">This is an amazing product that you will love. It has many great features.</div>
-    <div class="price">$19.99</div>
-    <div class="details">
-        <div>Detail 1: This product is made of high-quality materials.</div>
-        <div>Detail 2: It comes with a 2-year warranty.</div>
-        <div>Detail 3: Available in various colors.</div>
-    </div>
-    <div class="reviews">
-        <div class="review">
-            <div class="author">Reviewer 1</div>
-            <div class="text">I love this product! It exceeded my expectations.</div>
-        </div>
-        <div class="review">
-            <div class="author">Reviewer 2</div>
-            <div class="text">Great value for money. Would definitely recommend.</div>
-        </div>
-    </div>
-    <div class="form">
-        <div><input type="text" placeholder="Your name"></div>
-        <div><input type="email" placeholder="Your email"></div>
-        <div><textarea placeholder="Your review"></textarea></div>
-        <div><button type="submit">Submit</button></div>
-    </div>
-    <div class="footer">
-        <div>Contact us: info@store.com</div>
-        <div>&copy; 2024 My E-commerce Store</div>
-    </div>
+    <header class="header">
+        <h2 >Awesome Product</h2>
+    </header>
+    <main>
+        <section class="product" aria-labelledby="product-details">
+            <h2 id="product-details">Product details</h2>
+            <figure>
+                <img src="product.jpg" alt="Here alternative text describing a picture">
+                <figcaption>This is an amazing product that you will love. It has many great features.</figcaption>
+                <figcaption class="price">$19.99</figcaption>
+            </figure>
+            <ul class="details">
+                <li>Detail 1: This product is made of high-quality materials.</li>
+                <li>Detail 2: It comes with a 2-year warranty.</li>
+                <li>Detail 3: Available in various colors.</li>
+            </ul>
+        </section>
+        <section class="reviews" aria-labelledby="reviews-title">
+            <h2 id="reviews-title">Customers Reviews</h2>
+            <article class="review">
+                <p class="author"><span itemprop="author">Reviewer 1</span></p>
+                <p class="text">I love this product! It exceeded my expectations.</p>
+            </article>
+            <article class="review">
+                <p class="author"><span itemprop="author">Reviewer 2</span></p>
+                <p class="text">Great value for money. Would definitely recommend.</p>
+            </article>
+        </section>
+        <section class="form-section" aria-labelledby="form-title">
+            <h2 id="form-title">Leave your review:</h2>
+            <form>
+                <div class="form-box">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Name" aria-required="true">
+                </div>
+                <div class="form-box">
+                    <label for="email">Your email:</label>
+                    <input type="text" id="email" placeholder="Email" aria-required="true">
+                </div>
+                <div class="form-box">
+                    <label for="review">Your review:</label>
+                    <textarea type="text" id="review" placeholder="Review" aria-required="true"></textarea>
+                </div>
+                <div class="form-box">
+                    <button type="submit">Submit review</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: <a href="mailto:info@store.com">info@store.com</a></div>
+        <p>&copy; <time datetime="2024">2024</time> My E-commerce Store</p>
+    </footer>
 </body>
 </html>
