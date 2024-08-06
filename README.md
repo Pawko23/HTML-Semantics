@@ -16,4 +16,4 @@ The repository includes `to-recreate` folder with five HTML files that I will tr
 3. Improve Code Readability and Maintainability - Semantic HTML provides clearer context and meaning to the content, making it easier for developers to understand and maintain the code.
 
 ## How to use
-Since semantic HTML is the main focus in this project, pages are not really visual-friendly but feel free to explore the files in `to-recreate` directory to see how I have transformed non-semantic code into semantic HTML.  
+Since semantic HTML is the main focus in this project, pages are not really visual-friendly but feel free to explore the files in `to-recreate` directory and compare differences in commits for each of them to see how I have transformed non-semantic code into semantic HTML.
